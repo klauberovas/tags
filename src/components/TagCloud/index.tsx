@@ -53,7 +53,7 @@ export const TagCloud: React.FC = () => {
           Add
         </button>
       </form>
-      <div className="tags__cloud">
+      <div className="tags__items">
         {tags.map((tag, index) => {
           return (
             <div className="tag" key={index}>

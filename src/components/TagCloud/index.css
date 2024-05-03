@@ -1,24 +1,10 @@
 .tags {
-  width: 25rem;
+  width: 30rem;
   margin: 20px auto;
   background-color: #ebebeb;
   padding: 30px;
   border-radius: 2%;
   border-top: 5px solid #00c3ff;
-}
-
-.tags__cloud {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.tag {
-  border-left: 5px solid #ffa500;
-  padding: 8px;
-  text-align: center;
-  background-color: #ffffff;
 }
 
 .tags__form {
@@ -64,4 +50,30 @@ input {
 
 .tags__button--delete:hover {
   scale: 1.1;
+}
+
+.tags__items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag,
+.tags__items> :nth-child(-n+6) {
+  border-left: 5px solid #cccaca;
+  padding: 8px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+.tags__items> :nth-child(-n+2) {
+  border-left: 5px solid #ffa500;
+  font-weight: bold;
+}
+
+.tags__items> :nth-child(n+3):nth-child(-n+6) {
+  border-left: 5px solid #00b7ff;
+  font-weight: 600;
 }
